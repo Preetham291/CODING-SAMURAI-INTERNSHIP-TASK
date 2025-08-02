@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy - Fast Food Delivery Service</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-icon">🍔</span>
+                    <span class="logo-text">GRIET-FOODS</span>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-primary">Order Now</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Delicious Food <br>
+                    <span class="highlight">Delivered Fast</span>
+                </h1>
+                <p class="hero-description">
+                    Experience the fastest food delivery in the city. Fresh, hot meals delivered to your doorstep in under 30 minutes.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large">Order Now</button>
+                    <button class="btn btn-secondary btn-large">View Menu</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Partner Restaurants</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">25min</span>
+                        <span class="stat-label">Avg Delivery Time</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-container">
+                    <div class="floating-card delivery-card">
+                        <span class="card-icon">🚚</span>
+                        <span class="card-text">Free Delivery</span>
+                    </div>
+                    <div class="floating-card time-card">
+                        <span class="card-icon">⏰</span>
+                        <span class="card-text">30 Min</span>
+                    </div>
+                    <div class="hero-main-image">🍕</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="showcase">
+        <div class="section-header">
+            <h2 class="section-title">Popular Menu Items</h2>
+            <p class="section-subtitle">Discover our most loved dishes, prepared fresh daily</p>
+        </div>
+        <div class="showcase-grid">
+            <div class="food-card">
+                <div class="food-image">🍔</div>
+                <div class="food-content">
+                    <h3 class="food-title">Classic Burger</h3>
+                    <p class="food-description">Juicy beef patty with fresh lettuce, tomato, and our special sauce</p>
+                    <div class="food-footer">
+                        <span class="food-price">Rs.199</span>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-image">🍕</div>
+                <div class="food-content">
+                    <h3 class="food-title">Margherita Pizza</h3>
+                    <p class="food-description">Fresh mozzarella, basil, and tomato sauce on crispy crust</p>
+                    <div class="food-footer">
+                        <span class="food-price">Rs.169</span>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-image">🌮</div>
+                <div class="food-content">
+                    <h3 class="food-title">Chicken Tacos</h3>
+                    <p class="food-description">Grilled chicken with fresh salsa and creamy avocado</p>
+                    <div class="food-footer">
+                        <span class="food-price">Rs.199</span>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-image">🍜</div>
+                <div class="food-content">
+                    <h3 class="food-title">Ramen Bowl</h3>
+                    <p class="food-description">Rich broth with tender noodles, eggs, and fresh vegetables</p>
+                    <div class="food-footer">
+                        <span class="food-price">Rs.99</span>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-image">🥗</div>
+                <div class="food-content">
+                    <h3 class="food-title">Caesar Salad</h3>
+                    <p class="food-description">Crisp romaine lettuce with parmesan and our signature dressing</p>
+                    <div class="food-footer">
+                        <span class="food-price">Rs.59</span>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="food-image">🍰</div>
+                <div class="food-content">
+                    <h3 class="food-title">Chocolate Cake</h3>
+                    <p class="food-description">Decadent chocolate cake with rich frosting and berry topping</p>
+                    <div class="food-footer">
+                        <span class="food-price">Rs.79</span>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="section-title">Why Choose QuickBite?</h2>
+                <p class="about-description">
+                    We're revolutionizing food delivery with our commitment to speed, quality, and customer satisfaction. Our advanced logistics network ensures your food arrives hot and fresh, every time.
+                </p>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Lightning Fast</h3>
+                        <p class="feature-description">Average delivery time of 25 minutes or less</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🏆</div>
+                        <h3 class="feature-title">Premium Quality</h3>
+                        <p class="feature-description">Partner with only the best restaurants in town</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📱</div>
+                        <h3 class="feature-title">Easy Ordering</h3>
+                        <p class="feature-description">Simple app interface with real-time tracking</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💯</div>
+                        <h3 class="feature-title">100% Fresh</h3>
+                        <p class="feature-description">Hot insulated bags ensure food stays perfect</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="about-image-container">
+                    🚴‍♂️
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Real reviews from real customers</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "QuickBite is amazing! The food always arrives hot and the delivery is incredibly fast. My go-to app for ordering food."
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👨‍💼</div>
+                    <div class="author-info">
+                        <h4 class="author-name">John Smith</h4>
+                        <p class="author-title">Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Love the variety of restaurants available. The app is so easy to use and customer service is excellent. Highly recommend!"
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👩‍🎨</div>
+                    <div class="author-info">
+                        <h4 class="author-name">Sarah Johnson</h4>
+                        <p class="author-title">Graphic Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Perfect for busy weekdays! Food quality is consistently great and delivery times are always accurate. Couldn't be happier."
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👨‍⚕️</div>
+                    <div class="author-info">
+                        <h4 class="author-name">Dr. Michael Brown</h4>
+                        <p class="author-title">Medical Doctor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2 class="section-title">Get Started Today</h2>
+                <p class="contact-description">
+                    Join thousands of satisfied customers and experience the fastest food delivery in the city. Download our app or order online now!
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <h4>Call Us</h4>
+                            <p>+91 8074589460</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-text">
+                            <h4>Email Us</h4>
+                            <p>grietfoods@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-text">
+                            <h4>Hours</h4>
+                            <p>24/7 Delivery Service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form class="signup-form">
+                    <h3 class="form-title">Sign Up for Special Offers</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input form-textarea" placeholder="Special Requests (Optional)" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Get 100 Off First Order</button>
+                    <p class="form-note">
+                        By signing up, you agree to receive promotional emails and can unsubscribe at any time.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🍔</span>
+                        <span class="logo-text">GRIET-FOODS</span>
+                    </div>
+                    <p class="footer-description">
+                        The fastest and most reliable food delivery service in the city. Hot, fresh meals delivered to your door.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#menu" class="footer-link">Menu</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Support</h4>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Help Center</a>
+                    <a href="#" class="footer-link">Track Order</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Preetham. All rights reserved. | Delivering happiness
